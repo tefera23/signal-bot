@@ -242,8 +242,8 @@ ASSETS = ['AIDOGE-USDT-SWAP',
 'NMR-USDT-SWAP',
 'INJ-USDT-SWAP'
 ]  # Truncated for brevity
-TIMEFRAME = '1m'
-LOOP_INTERVAL = 1 * 60  # 1 hour
+TIMEFRAME = '1h'
+LOOP_INTERVAL = 60 * 60  # 1 hour
 
 # === TELEGRAM NOTIFIER ===
 def send_telegram(msg):
