@@ -16,8 +16,8 @@ if not os.path.exists(LOG_FILE):
         writer.writerow(['datetime', 'symbol', 'signal', 'price'])
 
 # === CONFIGURATION ===
-TELEGRAM_TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
-TELEGRAM_CHAT_ID = 'YOUR_CHAT_ID'
+TELEGRAM_TOKEN = '7762261757:AAHdfupSiXXFMa5E6wpopgsyYEUDbylEB5g'
+TELEGRAM_CHAT_ID = '968054209'
 ASSETS = ['AIDOGE-USDT-SWAP',
 'SATS-USDT-SWAP',
 'NFT-USDT-SWAP',
@@ -242,8 +242,8 @@ ASSETS = ['AIDOGE-USDT-SWAP',
 'NMR-USDT-SWAP',
 'INJ-USDT-SWAP'
 ]  # Truncated for brevity
-TIMEFRAME = '15m'
-LOOP_INTERVAL = 15 * 60  # 1 hour
+TIMEFRAME = '1m'
+LOOP_INTERVAL = 1 * 60  # 1 hour
 
 # === TELEGRAM NOTIFIER ===
 def send_telegram(msg):
