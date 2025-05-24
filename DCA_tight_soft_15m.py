@@ -47,7 +47,7 @@ def get_usdt_swap_symbols():
     data = response.json().get("data", [])
     return [item['instId'] for item in data if item['settleCcy'] == 'USDT']
 
-def get_okx_ohlcv(symbol='BTC-USDT-SWAP', interval='15m', limit=100):
+def get_okx_ohlcv(symbol='BTC-USDT-SWAP', interval='24h', limit=100):
     url = f"https://www.okx.com/api/v5/market/candles?instId={symbol}&bar={interval}&limit={limit}"
     try:
         response = requests.get(url)
